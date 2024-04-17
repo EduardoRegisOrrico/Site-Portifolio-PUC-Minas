@@ -1,0 +1,271 @@
+@font-face {
+    font-family: freight;
+    src: url(fonts/FreightDispProMedium-Regular.ttf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'freight', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: #fff;
+    color: #48240c;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.container{
+    padding: 40px 5%;
+}
+
+.logo{
+    width: 700px;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #48240c;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #48240c;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 1%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+hr {
+    height: 5px;
+    background: #48240c;
+
+}
+
+/*--------------perfil-------------*/
+#Perfil{
+    padding: 10px 0;
+    color: #48240c;
+
+}
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imagem{
+    flex-basis: 30%;
+}
+.imagem img{
+    width: 80%;
+    border-radius: 15px;
+}
+.sobre-mim{
+    flex-basis: 70%;
+}
+.localizacao{
+    font-weight: 550;
+}
+.cidade{
+    font-weight: lighter;
+    font-size: 25px;
+}
+.gitlinksobre{
+    font-weight: 550;
+}
+.gitlink a{
+    font-weight: lighter;
+    font-size: 25px;
+    text-decoration: none;
+    color: #48240c;
+}
+.descrição{
+    font-size: 25px;
+}
+
+/*-----------------------Repositorios----------------------*/
+
+#Repositorios{
+    padding: 10px 0;
+    color: #48240c;   
+}
+.container-flex{
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Repositorio1{
+    border-width: 10px;
+    border: #48240c;
+    border-radius: 10%;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Repositorio1 img{
+    width: 400px;
+}
+.Repositorio1 h1{
+    text-align: center;
+    color: #48240c;
+    text-decoration: underline #fff;
+}
+
+.Repositorio1 p{
+    text-align: center;
+    color: #48240c;
+    text-decoration: underline #fff;
+}
+
+
+
+
+/*------------------------Slides--------------------------*/
+
+
+.slider{
+    margin-top: 50px;
+    margin-bottom: 125px;
+    padding: 0rem;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 64rem;
+    margin: 0 auto ;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0% , 0.25);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #ffeed5;
+    opacity: 0.40;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+/*------------------Contribuidores--------------------*/
+
+#Contribuidores{
+    padding: 10px 0;
+    color: #48240c;   
+}
+.container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ContrBox{
+    float: left;
+    width: 350px;
+    margin: 15px;
+    
+}
+.ContrBox p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #48240c;
+}
+.ContrBox img{
+    border-radius: 2rem;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .4);
+    transition: 0.5s;
+}
+
+.ContrBox img:hover{
+    transform: scale(1.2);
+    z-index: .2;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/*---------------------RepositorioPagina-----------------------*/
+
+.Texto h1{
+    font-size: 40px;
+}
+.Texto p{
+    padding: 2px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.Texto a{
+    padding: 5px;
+    font-size: 25px;
+    color: #48240c;
+    text-decoration: none;
+}
