@@ -140,7 +140,7 @@ hr {
     justify-content: center;
 }
 .Repositorio1 img{
-    width: 400px;
+    max-width: 400px;
 }
 .Repositorio1 h1{
     text-align: center;
@@ -153,8 +153,53 @@ hr {
     color: #48240c;
     text-decoration: underline #fff;
 }
+.Repositorio2{
+    border-width: 10px;
+    border: #48240c;
+    border-radius: 10%;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Repositorio2 img{
+    max-width: 400px;
+}
+.Repositorio2 h1{
+    text-align: center;
+    color: #48240c;
+    text-decoration: underline #fff;
+}
 
+.Repositorio2 p{
+    text-align: center;
+    color: #48240c;
+    text-decoration: underline #fff;
+}
 
+.Repositorio3{
+    border-width: 10px;
+    border: #48240c;
+    border-radius: 10%;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Repositorio3 img{
+    max-width: 400px;
+}
+.Repositorio3 h1{
+    text-align: center;
+    color: #48240c;
+    text-decoration: underline #fff;
+}
+
+.Repositorio3 p{
+    text-align: center;
+    color: #48240c;
+    text-decoration: underline #fff;
+}
 
 
 /*------------------------Slides--------------------------*/
@@ -268,4 +313,24 @@ hr {
     font-size: 25px;
     color: #48240c;
     text-decoration: none;
+}
+
+.ioniconsstar{
+    display: flex;
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.numbers{
+    display: flex;
+    float: right;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+
+.ioniconsperson{
+    display: flex;
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
 }
